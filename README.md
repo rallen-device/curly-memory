@@ -19,5 +19,5 @@ CONTROLS:
 
 ## References
 
-https://www.electrosmash.com/pt2399-analysis
-https://intellijel.com/support/eurorack-101/
+- https://www.electrosmash.com/pt2399-analysis
+- https://intellijel.com/support/eurorack-101/
