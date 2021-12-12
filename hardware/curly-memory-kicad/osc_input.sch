@@ -1,0 +1,163 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 2550 2550 0    50   Input ~ 0
+OSC_IN
+Text Label 3150 2550 2    50   ~ 0
+OSC_IN
+$Comp
+L Device:R_POT RV?
+U 1 1 61B62732
+P 4350 2750
+AR Path="/61B5DABA/61B62732" Ref="RV?"  Part="1" 
+AR Path="/61B6A05C/61B62732" Ref="RV?"  Part="1" 
+F 0 "RV?" H 4281 2796 50  0000 R CNN
+F 1 "R_POT" H 4281 2705 50  0000 R CNN
+F 2 "" H 4350 2750 50  0001 C CNN
+F 3 "~" H 4350 2750 50  0001 C CNN
+	1    4350 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61B64340
+P 4350 3100
+AR Path="/61B5DABA/61B64340" Ref="#PWR?"  Part="1" 
+AR Path="/61B6A05C/61B64340" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4350 2850 50  0001 C CNN
+F 1 "GND" H 4355 2927 50  0000 C CNN
+F 2 "" H 4350 3100 50  0001 C CNN
+F 3 "" H 4350 3100 50  0001 C CNN
+	1    4350 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61B650B1
+P 5050 2750
+AR Path="/61B5DABA/61B650B1" Ref="C?"  Part="1" 
+AR Path="/61B6A05C/61B650B1" Ref="C?"  Part="1" 
+F 0 "C?" V 4798 2750 50  0000 C CNN
+F 1 "10uF" V 4889 2750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5088 2600 50  0001 C CNN
+F 3 "~" H 5050 2750 50  0001 C CNN
+	1    5050 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 61B65843
+P 5500 2100
+AR Path="/61B5DABA/61B65843" Ref="RV?"  Part="1" 
+AR Path="/61B6A05C/61B65843" Ref="RV?"  Part="1" 
+F 0 "RV?" H 5430 2054 50  0000 R CNN
+F 1 "R_POT" H 5430 2145 50  0000 R CNN
+F 2 "" H 5500 2100 50  0001 C CNN
+F 3 "~" H 5500 2100 50  0001 C CNN
+	1    5500 2100
+	-1   0    0    1   
+$EndComp
+NoConn ~ 5500 1950
+$Comp
+L power:+5V #PWR?
+U 1 1 61B66130
+P 4500 2050
+AR Path="/61B5DABA/61B66130" Ref="#PWR?"  Part="1" 
+AR Path="/61B6A05C/61B66130" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4500 1900 50  0001 C CNN
+F 1 "+5V" H 4515 2223 50  0000 C CNN
+F 2 "" H 4500 2050 50  0001 C CNN
+F 3 "" H 4500 2050 50  0001 C CNN
+	1    4500 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 2050 4500 2100
+Wire Wire Line
+	4500 2100 5350 2100
+Wire Wire Line
+	4350 2550 4350 2600
+Wire Wire Line
+	4350 2900 4350 3100
+Wire Wire Line
+	4900 2750 4500 2750
+$Comp
+L Diode:BAV99 D?
+U 1 1 61B67775
+P 6350 2750
+AR Path="/61B5DABA/61B67775" Ref="D?"  Part="1" 
+AR Path="/61B6A05C/61B67775" Ref="D?"  Part="1" 
+F 0 "D?" V 6396 2829 50  0000 L CNN
+F 1 "BAV99" V 6305 2829 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6350 2250 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 6350 2750 50  0001 C CNN
+	1    6350 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 2750 5500 2750
+Wire Wire Line
+	6550 2750 7200 2750
+Connection ~ 6550 2750
+Text Label 7200 2750 2    50   ~ 0
+OSC_OUT
+Text HLabel 2550 2700 0    50   Input ~ 0
+OSC_OUT
+Text Label 3150 2700 2    50   ~ 0
+OSC_OUT
+Wire Wire Line
+	3150 2700 2550 2700
+Text Label 3500 2550 0    50   ~ 0
+OSC_IN
+Wire Wire Line
+	3150 2550 2550 2550
+Wire Wire Line
+	3500 2550 4350 2550
+Wire Wire Line
+	5500 2250 5500 2750
+Connection ~ 5500 2750
+Wire Wire Line
+	5500 2750 6550 2750
+$Comp
+L power:GND #PWR?
+U 1 1 61B69528
+P 6350 3100
+AR Path="/61B5DABA/61B69528" Ref="#PWR?"  Part="1" 
+AR Path="/61B6A05C/61B69528" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6350 2850 50  0001 C CNN
+F 1 "GND" H 6355 2927 50  0000 C CNN
+F 2 "" H 6350 3100 50  0001 C CNN
+F 3 "" H 6350 3100 50  0001 C CNN
+	1    6350 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3100 6350 3050
+Wire Wire Line
+	6350 2450 6350 2050
+$Comp
+L power:+5V #PWR?
+U 1 1 61B69B3E
+P 6350 2050
+AR Path="/61B5DABA/61B69B3E" Ref="#PWR?"  Part="1" 
+AR Path="/61B6A05C/61B69B3E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6350 1900 50  0001 C CNN
+F 1 "+5V" H 6365 2223 50  0000 C CNN
+F 2 "" H 6350 2050 50  0001 C CNN
+F 3 "" H 6350 2050 50  0001 C CNN
+	1    6350 2050
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

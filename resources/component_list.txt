@@ -1,0 +1,3 @@
+ADC - option a - https://www.ti.com/store/ti/en/p/product/?p=ADC082S021CIMM/NOPB
+ADC - option b - https://uk.farnell.com/microchip/mcp3002-i-sn/adc-10bit-2-7v-2ch-spi-8soic/dp/1834969?st=mcp3002
+1/8 Jack - ACJM-MV35-2S - https://uk.farnell.com/amphenol-sine-tuchel/acjm-mv35-2s/phone-connector-mono-jack-2pos/dp/3280971?ost=acjm-mv35-2s

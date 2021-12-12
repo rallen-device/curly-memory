@@ -1,0 +1,661 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 1700 6000 850  300 
+U 61B5DABA
+F0 "osc_in_a" 50
+F1 "osc_input.sch" 50
+F2 "OSC_IN" I L 1700 6150 50 
+F3 "OSC_OUT" I R 2550 6150 50 
+$EndSheet
+$Sheet
+S 1700 6600 850  300 
+U 61B6A05C
+F0 "osc_in_b" 50
+F1 "osc_input.sch" 50
+F2 "OSC_IN" I L 1700 6750 50 
+F3 "OSC_OUT" I R 2550 6750 50 
+$EndSheet
+$Comp
+L Analog_ADC:MCP3002 U?
+U 1 1 61B6A3F6
+P 3450 6450
+F 0 "U?" H 3550 7131 50  0000 C CNN
+F 1 "MCP3002" H 3550 7040 50  0000 C CNN
+F 2 "" H 3450 6350 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21294E.pdf" H 3450 6650 50  0001 C CNN
+	1    3450 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 6650 2800 6650
+Wire Wire Line
+	2800 6650 2800 6750
+Wire Wire Line
+	2800 6750 2550 6750
+Wire Wire Line
+	2550 6150 2800 6150
+Wire Wire Line
+	2800 6150 2800 6250
+Wire Wire Line
+	2800 6250 2950 6250
+Wire Wire Line
+	3450 5950 3450 5350
+$Comp
+L power:+5V #PWR?
+U 1 1 61B6B5ED
+P 3450 5300
+F 0 "#PWR?" H 3450 5150 50  0001 C CNN
+F 1 "+5V" H 3465 5473 50  0000 C CNN
+F 2 "" H 3450 5300 50  0001 C CNN
+F 3 "" H 3450 5300 50  0001 C CNN
+	1    3450 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61B6B8DE
+P 3450 7150
+F 0 "#PWR?" H 3450 6900 50  0001 C CNN
+F 1 "GND" H 3455 6977 50  0000 C CNN
+F 2 "" H 3450 7150 50  0001 C CNN
+F 3 "" H 3450 7150 50  0001 C CNN
+	1    3450 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 7150 3450 6950
+$Comp
+L Connector:AudioJack2 J?
+U 1 1 61B6D205
+P 1050 6250
+F 0 "J?" H 1082 6575 50  0000 C CNN
+F 1 "AudioJack2" H 1082 6484 50  0000 C CNN
+F 2 "" H 1050 6250 50  0001 C CNN
+F 3 "~" H 1050 6250 50  0001 C CNN
+	1    1050 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2 J?
+U 1 1 61B6DB2A
+P 1050 6850
+F 0 "J?" H 1082 7175 50  0000 C CNN
+F 1 "AudioJack2" H 1082 7084 50  0000 C CNN
+F 2 "" H 1050 6850 50  0001 C CNN
+F 3 "~" H 1050 6850 50  0001 C CNN
+	1    1050 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 6150 1700 6150
+Wire Wire Line
+	1250 6750 1700 6750
+$Comp
+L power:GND #PWR?
+U 1 1 61B6F044
+P 1350 6950
+F 0 "#PWR?" H 1350 6700 50  0001 C CNN
+F 1 "GND" H 1355 6777 50  0000 C CNN
+F 2 "" H 1350 6950 50  0001 C CNN
+F 3 "" H 1350 6950 50  0001 C CNN
+	1    1350 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 6950 1350 6850
+Wire Wire Line
+	1350 6850 1250 6850
+$Comp
+L power:GND #PWR?
+U 1 1 61B6F3A4
+P 1350 6350
+F 0 "#PWR?" H 1350 6100 50  0001 C CNN
+F 1 "GND" H 1355 6177 50  0000 C CNN
+F 2 "" H 1350 6350 50  0001 C CNN
+F 3 "" H 1350 6350 50  0001 C CNN
+	1    1350 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 6350 1350 6250
+Wire Wire Line
+	1350 6250 1250 6250
+$Comp
+L Potentiometer_Digital:MCP4251-xxxx-ST U?
+U 1 1 61B76891
+P 7300 2150
+F 0 "U?" H 7300 2931 50  0000 C CNN
+F 1 "MCP4251-xxxx-ST" H 7300 2840 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 7300 1150 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/22060b.pdf" H 7500 2000 50  0001 C CNN
+	1    7300 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Audio:PT2399 U?
+U 1 1 61B79C50
+P 9700 2450
+F 0 "U?" H 9700 3217 50  0000 C CNN
+F 1 "PT2399" H 9700 3126 50  0000 C CNN
+F 2 "" H 9700 2050 50  0001 C CNN
+F 3 "http://sound.westhost.com/pt2399.pdf" H 9700 2050 50  0001 C CNN
+	1    9700 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L RF_Module:ESP32-WROOM-32 U?
+U 1 1 61B7A96E
+P 2850 3050
+F 0 "U?" H 2850 4631 50  0000 C CNN
+F 1 "ESP32-WROOM-32" H 2850 4540 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 2850 1550 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 2550 3100 50  0001 C CNN
+	1    2850 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2650 3950 2650
+Text Label 3950 2650 2    50   ~ 0
+SPI_CLK
+Text Label 3950 2450 2    50   ~ 0
+SPI_MISO
+Text Label 3950 2550 2    50   ~ 0
+SPI_MOSI
+Text Label 3950 2750 2    50   ~ 0
+SPI_CS_0
+Text Label 3950 2850 2    50   ~ 0
+SPI_CS_1
+Wire Wire Line
+	3950 2850 3450 2850
+Wire Wire Line
+	3450 2750 3950 2750
+Wire Wire Line
+	3950 2550 3450 2550
+Wire Wire Line
+	3450 2450 3950 2450
+Wire Wire Line
+	4150 6350 4650 6350
+Text Label 4650 6350 2    50   ~ 0
+SPI_CLK
+Text Label 4650 6550 2    50   ~ 0
+SPI_MISO
+Text Label 4650 6650 2    50   ~ 0
+SPI_MOSI
+Text Label 4650 6250 2    50   ~ 0
+SPI_CS_0
+Wire Wire Line
+	4150 6250 4650 6250
+Wire Wire Line
+	4650 6650 4150 6650
+Wire Wire Line
+	4150 6550 4650 6550
+Wire Wire Line
+	6900 1950 6400 1950
+Text Label 6400 1950 0    50   ~ 0
+SPI_CLK
+Text Label 6400 2150 0    50   ~ 0
+SPI_MISO
+Text Label 6400 2050 0    50   ~ 0
+SPI_MOSI
+Text Label 6400 1850 0    50   ~ 0
+SPI_CS_1
+Wire Wire Line
+	6900 1850 6400 1850
+Wire Wire Line
+	6400 2050 6900 2050
+Wire Wire Line
+	6900 2150 6400 2150
+Wire Wire Line
+	3450 2950 3950 2950
+Text Label 3950 2950 2    50   ~ 0
+RES_~SHDN
+Text Label 3950 3050 2    50   ~ 0
+RES_~WP
+Wire Wire Line
+	3950 3050 3450 3050
+Wire Wire Line
+	6900 2350 6400 2350
+Text Label 6400 2350 0    50   ~ 0
+RES_~SHDN
+Text Label 6400 2450 0    50   ~ 0
+RES_~WP
+Wire Wire Line
+	6400 2450 6900 2450
+Wire Wire Line
+	7300 1550 7300 1050
+$Comp
+L power:+5V #PWR?
+U 1 1 61B85FE4
+P 7300 1000
+F 0 "#PWR?" H 7300 850 50  0001 C CNN
+F 1 "+5V" H 7315 1173 50  0000 C CNN
+F 2 "" H 7300 1000 50  0001 C CNN
+F 3 "" H 7300 1000 50  0001 C CNN
+	1    7300 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 2750 7300 2850
+$Comp
+L power:GND #PWR?
+U 1 1 61B86AC7
+P 7300 2850
+F 0 "#PWR?" H 7300 2600 50  0001 C CNN
+F 1 "GND" H 7305 2677 50  0000 C CNN
+F 2 "" H 7300 2850 50  0001 C CNN
+F 3 "" H 7300 2850 50  0001 C CNN
+	1    7300 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61B878EF
+P 3950 5550
+F 0 "C?" H 4065 5596 50  0000 L CNN
+F 1 "C" H 4065 5505 50  0000 L CNN
+F 2 "" H 3988 5400 50  0001 C CNN
+F 3 "~" H 3950 5550 50  0001 C CNN
+	1    3950 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61B88251
+P 4300 5550
+F 0 "C?" H 4415 5596 50  0000 L CNN
+F 1 "C" H 4415 5505 50  0000 L CNN
+F 2 "" H 4338 5400 50  0001 C CNN
+F 3 "~" H 4300 5550 50  0001 C CNN
+	1    4300 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61B88BEE
+P 3950 5750
+F 0 "#PWR?" H 3950 5500 50  0001 C CNN
+F 1 "GND" H 3955 5577 50  0000 C CNN
+F 2 "" H 3950 5750 50  0001 C CNN
+F 3 "" H 3950 5750 50  0001 C CNN
+	1    3950 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61B88C38
+P 4300 5750
+F 0 "#PWR?" H 4300 5500 50  0001 C CNN
+F 1 "GND" H 4305 5577 50  0000 C CNN
+F 2 "" H 4300 5750 50  0001 C CNN
+F 3 "" H 4300 5750 50  0001 C CNN
+	1    4300 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 5750 4300 5700
+Wire Wire Line
+	3950 5700 3950 5750
+Wire Wire Line
+	3450 5350 3950 5350
+Wire Wire Line
+	3950 5350 3950 5400
+Connection ~ 3450 5350
+Wire Wire Line
+	3450 5350 3450 5300
+Wire Wire Line
+	3950 5350 4300 5350
+Wire Wire Line
+	4300 5350 4300 5400
+Connection ~ 3950 5350
+$Comp
+L Device:C C?
+U 1 1 61B8FB55
+P 7800 1250
+F 0 "C?" H 7915 1296 50  0000 L CNN
+F 1 "C" H 7915 1205 50  0000 L CNN
+F 2 "" H 7838 1100 50  0001 C CNN
+F 3 "~" H 7800 1250 50  0001 C CNN
+	1    7800 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61B8FB5B
+P 8150 1250
+F 0 "C?" H 8265 1296 50  0000 L CNN
+F 1 "C" H 8265 1205 50  0000 L CNN
+F 2 "" H 8188 1100 50  0001 C CNN
+F 3 "~" H 8150 1250 50  0001 C CNN
+	1    8150 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61B8FB61
+P 7800 1450
+F 0 "#PWR?" H 7800 1200 50  0001 C CNN
+F 1 "GND" H 7805 1277 50  0000 C CNN
+F 2 "" H 7800 1450 50  0001 C CNN
+F 3 "" H 7800 1450 50  0001 C CNN
+	1    7800 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61B8FB67
+P 8150 1450
+F 0 "#PWR?" H 8150 1200 50  0001 C CNN
+F 1 "GND" H 8155 1277 50  0000 C CNN
+F 2 "" H 8150 1450 50  0001 C CNN
+F 3 "" H 8150 1450 50  0001 C CNN
+	1    8150 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 1450 8150 1400
+Wire Wire Line
+	7800 1400 7800 1450
+Wire Wire Line
+	7300 1050 7800 1050
+Wire Wire Line
+	7800 1050 7800 1100
+Wire Wire Line
+	7800 1050 8150 1050
+Wire Wire Line
+	8150 1050 8150 1100
+Connection ~ 7800 1050
+Connection ~ 7300 1050
+Wire Wire Line
+	7300 1050 7300 1000
+Text Notes 800  5600 0    50   Italic 0
+Oscillator inputs connect to dual ADC, ADC connects to ESP32,\nwhich send the values out to the digital pots
+Text Notes 800  5400 0    100  ~ 0
+OSC INPUTS
+Text Label 8300 1950 2    50   ~ 0
+RES_PIN_2_W
+Text Label 8300 1850 2    50   ~ 0
+RES_PIN_2_A
+Wire Wire Line
+	7700 1850 8300 1850
+Wire Wire Line
+	7700 1950 8300 1950
+NoConn ~ 7700 2050
+NoConn ~ 7700 2450
+NoConn ~ 8200 1900
+Text Label 8300 2350 2    50   ~ 0
+RES_PIN_6_W
+Text Label 8300 2250 2    50   ~ 0
+RES_PIN_6_A
+Wire Wire Line
+	7700 2250 8300 2250
+Wire Wire Line
+	7700 2350 8300 2350
+$Comp
+L Connector:AudioJack2 J?
+U 1 1 61BAC862
+P 10400 6000
+F 0 "J?" H 10220 6075 50  0000 R CNN
+F 1 "AudioJack2" H 10220 5984 50  0000 R CNN
+F 2 "" H 10400 6000 50  0001 C CNN
+F 3 "~" H 10400 6000 50  0001 C CNN
+	1    10400 6000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 61BB0E06
+P 9750 5900
+F 0 "RV?" H 9681 5946 50  0000 R CNN
+F 1 "R_POT" H 9681 5855 50  0000 R CNN
+F 2 "" H 9750 5900 50  0001 C CNN
+F 3 "~" H 9750 5900 50  0001 C CNN
+	1    9750 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 5750 9750 5550
+$Comp
+L power:+5V #PWR?
+U 1 1 61BB325C
+P 9750 5500
+F 0 "#PWR?" H 9750 5350 50  0001 C CNN
+F 1 "+5V" H 9765 5673 50  0000 C CNN
+F 2 "" H 9750 5500 50  0001 C CNN
+F 3 "" H 9750 5500 50  0001 C CNN
+	1    9750 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 5900 9900 5900
+Wire Wire Line
+	10200 6000 10100 6000
+Wire Wire Line
+	10100 6000 10100 6200
+$Comp
+L power:GND #PWR?
+U 1 1 61BB61FF
+P 10100 6200
+F 0 "#PWR?" H 10100 5950 50  0001 C CNN
+F 1 "GND" H 10105 6027 50  0000 C CNN
+F 2 "" H 10100 6200 50  0001 C CNN
+F 3 "" H 10100 6200 50  0001 C CNN
+	1    10100 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61BB6714
+P 9750 6200
+F 0 "#PWR?" H 9750 5950 50  0001 C CNN
+F 1 "GND" H 9755 6027 50  0000 C CNN
+F 2 "" H 9750 6200 50  0001 C CNN
+F 3 "" H 9750 6200 50  0001 C CNN
+	1    9750 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 6200 9750 6050
+$Comp
+L Device:C C?
+U 1 1 61BB88A4
+P 8800 5800
+F 0 "C?" H 8915 5846 50  0000 L CNN
+F 1 "C" H 8915 5755 50  0000 L CNN
+F 2 "" H 8838 5650 50  0001 C CNN
+F 3 "~" H 8800 5800 50  0001 C CNN
+	1    8800 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61BB88AA
+P 9150 5800
+F 0 "C?" H 9265 5846 50  0000 L CNN
+F 1 "C" H 9265 5755 50  0000 L CNN
+F 2 "" H 9188 5650 50  0001 C CNN
+F 3 "~" H 9150 5800 50  0001 C CNN
+	1    9150 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61BB88B0
+P 8800 6200
+F 0 "#PWR?" H 8800 5950 50  0001 C CNN
+F 1 "GND" H 8805 6027 50  0000 C CNN
+F 2 "" H 8800 6200 50  0001 C CNN
+F 3 "" H 8800 6200 50  0001 C CNN
+	1    8800 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61BB88B6
+P 9150 6200
+F 0 "#PWR?" H 9150 5950 50  0001 C CNN
+F 1 "GND" H 9155 6027 50  0000 C CNN
+F 2 "" H 9150 6200 50  0001 C CNN
+F 3 "" H 9150 6200 50  0001 C CNN
+	1    9150 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 6200 9150 5950
+Wire Wire Line
+	8800 5950 8800 6200
+Wire Wire Line
+	9750 5550 9150 5550
+Wire Wire Line
+	8800 5550 8800 5650
+Connection ~ 9750 5550
+Wire Wire Line
+	9750 5550 9750 5500
+Wire Wire Line
+	9150 5550 9150 5650
+Connection ~ 9150 5550
+Wire Wire Line
+	9150 5550 8800 5550
+$Comp
+L Connector:AudioJack2 J?
+U 1 1 61BC495D
+P 10400 4800
+F 0 "J?" H 10220 4875 50  0000 R CNN
+F 1 "AudioJack2" H 10220 4784 50  0000 R CNN
+F 2 "" H 10400 4800 50  0001 C CNN
+F 3 "~" H 10400 4800 50  0001 C CNN
+	1    10400 4800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 61BC4963
+P 9750 4700
+F 0 "RV?" H 9681 4746 50  0000 R CNN
+F 1 "R_POT" H 9681 4655 50  0000 R CNN
+F 2 "" H 9750 4700 50  0001 C CNN
+F 3 "~" H 9750 4700 50  0001 C CNN
+	1    9750 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 4550 9750 4350
+$Comp
+L power:+5V #PWR?
+U 1 1 61BC496A
+P 9750 4300
+F 0 "#PWR?" H 9750 4150 50  0001 C CNN
+F 1 "+5V" H 9765 4473 50  0000 C CNN
+F 2 "" H 9750 4300 50  0001 C CNN
+F 3 "" H 9750 4300 50  0001 C CNN
+	1    9750 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 4700 9900 4700
+Wire Wire Line
+	10200 4800 10100 4800
+Wire Wire Line
+	10100 4800 10100 5000
+$Comp
+L power:GND #PWR?
+U 1 1 61BC4973
+P 10100 5000
+F 0 "#PWR?" H 10100 4750 50  0001 C CNN
+F 1 "GND" H 10105 4827 50  0000 C CNN
+F 2 "" H 10100 5000 50  0001 C CNN
+F 3 "" H 10100 5000 50  0001 C CNN
+	1    10100 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61BC4979
+P 9750 5000
+F 0 "#PWR?" H 9750 4750 50  0001 C CNN
+F 1 "GND" H 9755 4827 50  0000 C CNN
+F 2 "" H 9750 5000 50  0001 C CNN
+F 3 "" H 9750 5000 50  0001 C CNN
+	1    9750 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 5000 9750 4850
+$Comp
+L Device:C C?
+U 1 1 61BC4980
+P 8800 4600
+F 0 "C?" H 8915 4646 50  0000 L CNN
+F 1 "C" H 8915 4555 50  0000 L CNN
+F 2 "" H 8838 4450 50  0001 C CNN
+F 3 "~" H 8800 4600 50  0001 C CNN
+	1    8800 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61BC4986
+P 9150 4600
+F 0 "C?" H 9265 4646 50  0000 L CNN
+F 1 "C" H 9265 4555 50  0000 L CNN
+F 2 "" H 9188 4450 50  0001 C CNN
+F 3 "~" H 9150 4600 50  0001 C CNN
+	1    9150 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61BC498C
+P 8800 5000
+F 0 "#PWR?" H 8800 4750 50  0001 C CNN
+F 1 "GND" H 8805 4827 50  0000 C CNN
+F 2 "" H 8800 5000 50  0001 C CNN
+F 3 "" H 8800 5000 50  0001 C CNN
+	1    8800 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61BC4992
+P 9150 5000
+F 0 "#PWR?" H 9150 4750 50  0001 C CNN
+F 1 "GND" H 9155 4827 50  0000 C CNN
+F 2 "" H 9150 5000 50  0001 C CNN
+F 3 "" H 9150 5000 50  0001 C CNN
+	1    9150 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 5000 9150 4750
+Wire Wire Line
+	8800 4750 8800 5000
+Wire Wire Line
+	9750 4350 9150 4350
+Wire Wire Line
+	8800 4350 8800 4450
+Connection ~ 9750 4350
+Wire Wire Line
+	9750 4350 9750 4300
+Wire Wire Line
+	9150 4350 9150 4450
+Connection ~ 9150 4350
+Wire Wire Line
+	9150 4350 8800 4350
+Text Notes 8800 3850 0    100  ~ 0
+POT OUTPUT
+Text Notes 8800 4000 0    50   Italic 0
+Potentiometers outputs to patch into oscillator inputs
+$EndSCHEMATC
