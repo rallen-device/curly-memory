@@ -21,3 +21,4 @@ CONTROLS:
 
 - https://www.electrosmash.com/pt2399-analysis
 - https://intellijel.com/support/eurorack-101/
+- https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/spi_master.html
