@@ -1,14 +1,13 @@
 # CURLY-MEMORY
 
-Delay effect based on a PT2399 and an ESP32.
+Open source delay effect based on a PT2399 using an ESP32.
 
-PT2399 set up like a basic delay. ESP32 controls digital pots on pin 2 and pin 6. Also allow for resistors to be placed directly on pin 2 and pin 6.
-ESP32 also connected to output of pin 5 to allow the exact frequency of the delay to be measured.
+ESP32 acts like PT2399, takes audio in via ADC, outputs audio with delay via DAC.
 
 INPUTS:
  - Audio in
- - Osc in for delay length (pin 6)
- - Osc in for chorus (pin 2)
+ - Osc in for delay length
+ - Osc in for feedback
 
 OUTPUTS:
  - Audio out
