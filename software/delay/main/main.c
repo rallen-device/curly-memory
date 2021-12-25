@@ -35,11 +35,11 @@ static const char TAG[] = "CMD"; // curly-memory-delay tag
 spi_device_handle_t spi_dac;
 spi_device_handle_t spi_adc;
 
-#define BUF_SIZE  sizeof(uint16_t)
+#define BUF_SIZE  50*1000
 
 uint16_t buf[BUF_SIZE];
-uint16_t buf_head;
-uint16_t buf_tail;
+uint32_t buf_head;
+uint32_t buf_tail;
 
 /*
 * Inits the spi line
@@ -145,18 +145,11 @@ void send_dac(uint8_t A_B, uint8_t gain, uint8_t shdn, uint16_t data)
 
 }
 
-void buf_add(uint16_t value)
-{
-  buf[buf_head++] = value;
-  if (buf_head == BUF_SIZE)
-  {
-    buf_head = 0;
-  }
-}
-
 uint16_t buf_pop()
 {
-  uint16_t value = buf[buf_tail++];
+  uint16_t value = buf[buf_tail];
+  buf[buf_tail] = 0;
+  buf_tail++;
   if (buf_tail == BUF_SIZE)
   {
     buf_tail = 0;
@@ -168,8 +161,12 @@ uint16_t buf_pop()
 void buf_add_delay(uint16_t value, uint16_t delay, uint8_t decay)
 {
   uint16_t delay_value = value / decay;
-  uint16_t delay_index = buf_head - delay;
-  buf[delay_index] = delay_value;
+  uint32_t delay_index = buf_tail + delay;
+  if (delay_index >= BUF_SIZE)
+  {
+    delay_index = delay_index - BUF_SIZE;
+  }
+  buf[delay_index] = buf[delay_value] + delay_value;
 }
 
 
@@ -183,19 +180,23 @@ void app_main(void)
 
   memset(&buf, 0, sizeof(buf));
   buf_head = 0;
-  buf_tail = BUF_SIZE - (BUF_SIZE / 2);
+  buf_tail = 0;
+
+  uint16_t repeats = 10;
+  uint16_t depth = 500;
 
   while(1) {
     count1++;
 
     // read value from adc as 12 bit value
     value = read_adc(1, 0);
-
-    buf_add(value);
-    buf_add_delay(value, BUF_SIZE / 4, 1);
+    for (uint8_t i = 1; i <= repeats; i++)
+    {
+       buf_add_delay(value, i*depth, i+1);
+    }
 
     // send value from adc to dac as 12 bit value
-    send_dac(0, 0, 1, buf_pop());
+    send_dac(0, 1, 1, buf_pop());
 
   }
 }
