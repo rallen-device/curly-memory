@@ -1,8 +1,8 @@
 # CURLY-MEMORY
 
-Open source delay effect based on a PT2399 using an ESP32.
+Open source eurorack hardware using an ESP32.
 
-ESP32 acts like PT2399, takes audio in via ADC, outputs audio with delay via DAC.
+ESP32 acts like anything you want, just reprogram with new firmware.
 
 INPUTS:
  - Audio in
