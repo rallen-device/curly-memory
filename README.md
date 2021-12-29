@@ -5,19 +5,28 @@ Open source eurorack hardware using an ESP32.
 ESP32 acts like anything you want, just reprogram with new firmware.
 
 INPUTS:
- - Audio in
- - Osc in for delay length
- - Osc in for feedback
+ - Analogue input x4
 
 OUTPUTS:
- - Audio out
- - +/-5V variable outputs (x2) (these allow the osc in inputs to be controlled without the need for an oscillator, just a patch cable connecting the two)
+ - Analogue output x4
 
 CONTROLS:
- - Potentiometer controls for +/-5V variable outputs
+ - Potentiometer input x4
+ - Rotary encoder + switch
+ - Tactile switch x2
+
+OTHER:
+ - Feedback resistor (digital pot connecting output to input
+ - Dry/wet NE5532 mixer (connecting to digital pot)
+ - WS2812B LEDs x4
+
+POWER:
+ - Eurorack standard 10 pin IDC connector
+ - 12V input
 
 ## References
 
 - https://www.electrosmash.com/pt2399-analysis
 - https://intellijel.com/support/eurorack-101/
 - https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/spi_master.html
+
