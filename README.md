@@ -4,25 +4,30 @@ Open source eurorack hardware using an ESP32.
 
 ESP32 acts like anything you want, just reprogram with new firmware.
 
-INPUTS:
+## Features
+
+### INPUTS:
  - Analogue input x4
 
-OUTPUTS:
+### OUTPUTS:
  - Analogue output x4
 
-CONTROLS:
+### CONTROLS:
  - Potentiometer input x4
  - Rotary encoder + switch
  - Tactile switch x2
 
-OTHER:
+### OTHER:
  - Feedback resistor (digital pot connecting output to input
  - Dry/wet NE5532 mixer (connecting to digital pot)
  - WS2812B LEDs x4
 
-POWER:
+### POWER:
  - Eurorack standard 10 pin IDC connector
  - 12V input
+
+### Firmware
+ - ESP-IDF or Arduino
 
 ## References
 
