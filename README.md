@@ -26,7 +26,7 @@ ESP32 acts like anything you want, just reprogram with new firmware.
  - Eurorack standard 10 pin IDC connector
  - 12V input
 
-### Firmware
+### FIRMWARE:
  - ESP-IDF or Arduino
 
 ## References
@@ -35,3 +35,6 @@ ESP32 acts like anything you want, just reprogram with new firmware.
 - https://intellijel.com/support/eurorack-101/
 - https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/spi_master.html
 
+## Influences
+
+- https://ornament-and-cri.me/
