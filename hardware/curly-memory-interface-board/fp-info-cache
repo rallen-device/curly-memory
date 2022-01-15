@@ -1,4 +1,4 @@
-19814616336302764
+19826109955021225
 AudioJacks
 Jack_3.5mm_Cliff_FCR1281_Horizontal
 
@@ -1258,7 +1258,7 @@ tactile push button, 6x6mm e.g. PTS645xx series, height=9.5mm
 tact sw push 6mm smd
 0
 4
-2
+4
 Button_Switch_SMD
 SW_Push_1P1T_NO_CK_KMR2
 CK components KMR2 tactile switch http://www.ckswitches.com/media/1479/kmr2.pdf
@@ -32565,6 +32565,13 @@ Through hole angled pin header THT 1x05 2.54mm single row
 5
 Connector_PinHeader_2.54mm
 PinHeader_1x05_P2.54mm_Vertical
+Through hole straight pin header, 1x05, 2.54mm pitch, single row
+Through hole pin header THT 1x05 2.54mm single row
+0
+5
+5
+Connector_PinHeader_2.54mm
+PinHeader_1x05_P2.54mm_Vertical_14mm
 Through hole straight pin header, 1x05, 2.54mm pitch, single row
 Through hole pin header THT 1x05 2.54mm single row
 0
@@ -84546,6 +84553,48 @@ SW_6mm_panel
 0
 0
 mylibs
+Thonkiconn_PJ398SM_panel
+
+
+0
+0
+0
+mylibs6
+2.54_pinheader_panel_01x05
+
+
+0
+0
+0
+mylibs6
+Eurorack_screw_hole
+
+
+0
+0
+0
+mylibs6
+FSM14_panel
+
+
+0
+0
+0
+mylibs6
+PTV09_panal
+
+
+0
+0
+0
+mylibs6
+PTV09_panel
+
+
+0
+0
+0
+mylibs6
 Thonkiconn_PJ398SM_panel
 
 
