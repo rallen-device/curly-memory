@@ -4613,10 +4613,10 @@
       (reference "D204") (unit 1) (value "BAV99") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
     (path "/aa0b1d86-1342-40c2-8de8-7218fa7c63b4/7446d76d-2fde-4221-8806-6d00bf800f04"
-      (reference "D401") (unit 1) (value "S1A") (footprint "Diode_SMD:D_SMA_Handsoldering")
+      (reference "D401") (unit 1) (value "S1A") (footprint "Diode_SMD:D_SMA")
     )
     (path "/aa0b1d86-1342-40c2-8de8-7218fa7c63b4/f5767d50-99bd-4422-8791-a242c45b6d63"
-      (reference "D402") (unit 1) (value "S1A") (footprint "Diode_SMD:D_SMA_Handsoldering")
+      (reference "D402") (unit 1) (value "S1A") (footprint "Diode_SMD:D_SMA")
     )
     (path "/aa0b1d86-1342-40c2-8de8-7218fa7c63b4/07a4cf4e-8202-4046-8d96-9e5ccd164933"
       (reference "D403") (unit 1) (value "LED") (footprint "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
