@@ -1,0 +1,37 @@
+Component,Part,Description,References,Value,Footprint,Quantity Per PCB,Datasheet,MF,MFPN,Material,Voltage,Tolerance
+1,C,Unpolarized capacitor,C201 C202 C203 C301 C302 C303,22pF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,6,,Samsung,CL21C220JBANNNC,CG0 / NP0,50V,
+2,C_1,Unpolarized capacitor,C101 C103 C104 C105 C106 C108 C109 C206 C207 C309 C310 C401 C408,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,13,~,Samsung,CL21B104KBCNNNC,X7R,50V,
+3,C,,C102 C110 C304 C305 C306,1uF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,5,,Samsung,CL21B105KBFNNNE,X7R,50V,
+4,C,,C402 C403 C404 C409 C410,10uF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,5,,Murata,GRM21BR61H106KE43L,X5R,50V,
+5,BAV99,,D201 D202 D203 D204,BAV99,SOT-23,4,https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf,,,,,
+6,LED,Light emitting diode,D403 D404,LED,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,2,~,Kingbright,KP-2012EC,,,
+7,D,,D401 D402,S1A,D_SMA,2,,,,,,
+8,R,Resistor,R107 R207 R208 R209,100R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,4,~,Multicomp,MCWR08X1000FTL,,,1%
+9,R,Resistor,R403 R404,150R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,2,~,Multicomp,MCWR08X1500FTL,,,1%
+10,R_1,Resistor,R101 R102 R103 R104 R105 R106,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,6,~,Multicomp,MCWR08X1001FTL,,,1%
+11,R,Resistor,R204 R205 R206 R301 R302 R303,47K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,6,~,Multicomp,MCWR08X4702FTL,,,1%
+12,R,Resistor,R402,56K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1,~,Multicomp,MCWR08X5602FTL,,,1%
+13,R,Resistor,R108 R201 R202 R203 R304 R305 R306 R307 R308 R309 R401,100K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,11,~,Multicomp,MCWR08X1003FTL,,,1%
+14,ESP32-WROOM-32,,U102,ESP32-WROOM-32,ESP32-WROOM-32,1,https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf,,,,,
+15,MCP3008,,U101,MCP3008-I/SL,SOIC-16_3.9x9.9mm_P1.27mm,1,http://ww1.microchip.com/downloads/en/DeviceDoc/21295d.pdf,,,,,
+16,MCP42010,"Dual Digital Potentiometer, SPI interface, 256 taps, 10 kohm",U105 U106,MCP42010-I/SL,SOIC-14_3.9x8.7mm_P1.27mm,2,http://ww1.microchip.com/downloads/en/DeviceDoc/11195c.pdf,,,,,
+17,MCP4822,,U103 U104,MCP4822-E/SN,SOIC-8_3.9x4.9mm_P1.27mm,2,http://ww1.microchip.com/downloads/en/DeviceDoc/20002249B.pdf,,,,,
+18,MCP6004,"1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14",U201 U301,MCP6004-I/SL,SOIC-14_3.9x8.7mm_P1.27mm,2,http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf,,,,,
+19,NCP1117-3.3_SOT223,"1A Low drop-out regulator, Fixed Output 3.3V, SOT-223",U402,NCP1117-3.3_SOT223,SOT-223-3_TabPin2,1,http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF,STMICROELECTRONICS,LD1117S33TR,,3V3,
+20,NCP1117-5.0_SOT223,"1A Low drop-out regulator, Fixed Output 5V, SOT-223",U401,NCP1117-5.0_SOT223,SOT-223-3_TabPin2,1,http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF,STMICROELECTRONICS,LD1117S50TR,,5V,
+
+
+
+
+
+Component Groups:,20
+Component Count:,77
+Fitted Components:,77
+Number of PCBs:,1
+Total components:,77
+Schematic Version:,
+Schematic Date:,
+PCB Variant:,default
+BoM Date:,"Sunday, 16 January 2022 at 09:36:38"
+Schematic Source:,curly-memory-kicad.kicad_sch
+KiCad Version:,Eeschema (6.0.0-0)
