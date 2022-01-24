@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/Users/richardallen/Documents/Projects/Effects/curly-memory/hardware/curly-memory-kicad/curly-memory-kicad.kicad_sch</source>
-    <date>Sunday, 16 January 2022 at 09:36:38</date>
+    <date>Sunday, 16 January 2022 at 09:43:23</date>
     <tool>Eeschema (6.0.0-0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -87,7 +87,7 @@
         <field name="Material">X7R</field>
         <field name="Voltage">50V</field>
       </fields>
-      <libsource lib="" part="C_1" description="Unpolarized capacitor"/>
+      <libsource lib="" part="C_2" description="Unpolarized capacitor"/>
       <property name="Voltage" value="50V"/>
       <property name="MF" value="Samsung"/>
       <property name="MFPN" value="CL21B104KBCNNNC"/>
@@ -1345,7 +1345,7 @@
     </comp>
   </components>
   <libparts>
-    <libpart lib="" part="C_1">
+    <libpart lib="" part="C_2">
       <description>Unpolarized capacitor</description>
       <docs>~</docs>
       <footprints>
@@ -1353,7 +1353,7 @@
       </footprints>
       <fields>
         <field name="Reference">C</field>
-        <field name="Value">C_1</field>
+        <field name="Value">C_2</field>
         <field name="Datasheet">~</field>
       </fields>
       <pins>

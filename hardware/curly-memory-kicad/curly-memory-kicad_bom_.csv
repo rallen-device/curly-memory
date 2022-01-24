@@ -1,6 +1,6 @@
 Component,Part,Description,References,Value,Footprint,Quantity Per PCB,Datasheet,MF,MFPN,Material,Voltage,Tolerance
 1,C,Unpolarized capacitor,C201 C202 C203 C301 C302 C303,22pF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,6,,Samsung,CL21C220JBANNNC,CG0 / NP0,50V,
-2,C_1,Unpolarized capacitor,C101 C103 C104 C105 C106 C108 C109 C206 C207 C309 C310 C401 C408,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,13,~,Samsung,CL21B104KBCNNNC,X7R,50V,
+2,C_2,Unpolarized capacitor,C101 C103 C104 C105 C106 C108 C109 C206 C207 C309 C310 C401 C408,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,13,~,Samsung,CL21B104KBCNNNC,X7R,50V,
 3,C,,C102 C110 C304 C305 C306,1uF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,5,,Samsung,CL21B105KBFNNNE,X7R,50V,
 4,C,,C402 C403 C404 C409 C410,10uF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,5,,Murata,GRM21BR61H106KE43L,X5R,50V,
 5,BAV99,,D201 D202 D203 D204,BAV99,SOT-23,4,https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf,,,,,
@@ -32,6 +32,6 @@ Total components:,77
 Schematic Version:,
 Schematic Date:,
 PCB Variant:,default
-BoM Date:,"Sunday, 16 January 2022 at 09:36:38"
+BoM Date:,"Sunday, 16 January 2022 at 09:43:23"
 Schematic Source:,curly-memory-kicad.kicad_sch
 KiCad Version:,Eeschema (6.0.0-0)
