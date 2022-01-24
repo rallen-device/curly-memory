@@ -36,6 +36,8 @@ ESP32 acts like anything you want, just reprogram with new firmware.
 ## Images
 
 ![main-cad](./resources/pcb-stackup-cad-front.png)
+![zoom-cad](./resources/pcb-stackup-cad-main-zoom.png)
+![side-cad](./resources/pcb-stackup-cad-side.png)
 
 ## References
 
